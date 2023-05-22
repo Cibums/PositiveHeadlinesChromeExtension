@@ -1,0 +1,23 @@
+{
+    "name": "Positive Titles",
+    "version": "0.1",
+    "description": "Change news articles' titles into positive, informative and descriptive ones",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "host_permissions":[
+        "https://secure-plateau-84403.herokuapp.com/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 3
+}
