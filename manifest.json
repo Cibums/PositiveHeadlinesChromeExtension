@@ -3,7 +3,8 @@
     "version": "0.1",
     "description": "Change news articles' titles into positive, informative and descriptive ones",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "alarms"
     ],
     "host_permissions":[
         "https://secure-plateau-84403.herokuapp.com/"
